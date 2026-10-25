@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Sarrvish Nair - Network Computing & Computer Science Student.">
+  <title>Sarrvish Nair | Portfolio & Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header & Persistent Navigation -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand" aria-label="Home">SN<span>.</span></a>
+      
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation menu" type="button">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <nav id="primaryNav" class="nav-links" aria-label="Main Navigation">
+        <ul>
+          <li><a href="#home" class="nav-item">Home</a></li>
+          <li><a href="#about" class="nav-item">About</a></li>
+          <li><a href="#projects" class="nav-item">Projects</a></li>
+          <li><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle visual theme" type="button">
+          <span id="themeIcon">☀️</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Home / Hero Section -->
+    <section id="home" class="hero-section section-padding">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Hello, my name is</p>
+          <h1 class="hero-title">Sarrvish Nair</h1>
+          <p class="hero-subtitle">A Network Computing & Systems Undergraduate</p>
+          <p class="hero-description">
+            Specializing in resilient networks, distributed systems, and secure software development, building reliable applications grounded in industry standards.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-card">
+            <span class="stat-number" data-target="5">0</span>
+            <span class="stat-label">Core Projects</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="100">0</span>
+            <span class="stat-label">% Semantic HTML</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="24">0</span>
+            <span class="stat-label">Hour Support Turnaround</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section section-padding">
+      <div class="container">
+        <h2 class="section-heading">About Me</h2>
+        <div class="about-content">
+          <div class="about-bio">
+            <p>
+              I am an undergraduate studying Computer Science with a specialization in Network Computing at Universiti Malaysia Sarawak (UNIMAS). My technical grounding centers on network protocols, systems administration, Linux environments, and clean application architecture.
+            </p>
+            <p>
+              Alongside my academic coursework, I run an electrical wiring and contracting venture, which reinforces practical discipline, hardware safety diagnostics, and structured operational workflows.
+            </p>
+            <div class="skills-block">
+              <h3>Technical Competencies</h3>
+              <ul class="skills-tag-list" aria-label="Key technical skills">
+                <li>Network Protocols (TCP/IP, DNS, DHCP)</li>
+                <li>Linux Administration</li>
+                <li>Java & SQL</li>
+                <li>HTML5 & Semantic Web</li>
+                <li>Responsive CSS Architecture</li>
+                <li>Modern Vanilla JavaScript</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section (5 Detailed Projects) -->
+    <section id="projects" class="projects-section section-padding">
+      <div class="container">
+        <h2 class="section-heading">Featured Projects</h2>
+        <p class="section-sub">A showcase of 5 technical solutions built from the ground up.</p>
+
+        <!-- Project Controls (Filtering & Search) -->
+        <div class="project-controls" role="region" aria-label="Project filtering and search">
+          <div class="filter-group" role="group" aria-label="Filter projects by category">
+            <button class="filter-btn active" data-filter="all" type="button">All</button>
+            <button class="filter-btn" data-filter="systems" type="button">Systems & Networks</button>
+            <button class="filter-btn" data-filter="web" type="button">Web & Software</button>
+          </div>
+          <div class="search-group">
+            <label for="projectSearch" class="sr-only">Search projects by name or technology</label>
+            <input type="text" id="projectSearch" placeholder="Filter by tech or title..." autocomplete="off">
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projectsContainer">
+          <!-- Project 1 -->
+          <article class="project-card" data-category="systems" data-keywords="network subnet cidr ip routing networking">
+            <header class="project-card-header">
+              <span class="project-tag">Systems & Networks</span>
+              <h3 class="project-title">CIDR & IPv4 Subnet Analyzer</h3>
+            </header>
+            <p class="project-desc">
+              A high-precision network utility that breaks down IPv4 blocks into network addresses, broadcast domains, usable host ranges, and custom VLSM tables.
+            </p>
+            <ul class="tech-list" aria-label="Technologies used">
+              <li>Vanilla JS</li>
+              <li>Bitwise Math</li>
+              <li>CSS Grid</li>
+            </ul>
+            <footer class="project-card-footer">
+              <button class="btn btn-sm btn-outline modal-trigger" data-project="0" type="button">Details</button>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-text" aria-label="Source code for CIDR & IPv4 Subnet Analyzer (opens in a new tab)">Source ↗</a>
+            </footer>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card" data-category="systems" data-keywords="database sql mariadb fragmentation distributed systems">
+            <header class="project-card-header">
+              <span class="project-tag">Systems & Networks</span>
+              <h3 class="project-title">Distributed Database Fragmentation Visualizer</h3>
+            </header>
+            <p class="project-desc">
+              Demonstrates horizontal and vertical partitioning schemes across multi-node topologies, simulating data sharding and query overhead.
+            </p>
+            <ul class="tech-list" aria-label="Technologies used">
+              <li>MariaDB</li>
+              <li>Java</li>
+              <li>Data Modeling</li>
+            </ul>
+            <footer class="project-card-footer">
+              <button class="btn btn-sm btn-outline modal-trigger" data-project="1" type="button">Details</button>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-text" aria-label="Source code for Distributed Database Fragmentation Visualizer (opens in a new tab)">Source ↗</a>
+            </footer>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card" data-category="systems" data-keywords="linux bash socket tcp diagnostics monitor server">
+            <header class="project-card-header">
+              <span class="project-tag">Systems & Networks</span>
+              <h3 class="project-title">Headless Linux Server Health Monitor</h3>
+            </header>
+            <p class="project-desc">
+              Automated telemetry reporting utility monitoring CPU loads, memory pressures, open ports, and anomalous connection spikes on debian servers.
+            </p>
+            <ul class="tech-list" aria-label="Technologies used">
+              <li>Bash</li>
+              <li>Linux CLI</li>
+              <li>Cron</li>
+            </ul>
+            <footer class="project-card-footer">
+              <button class="btn btn-sm btn-outline modal-trigger" data-project="2" type="button">Details</button>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-text" aria-label="Source code for Headless Linux Server Health Monitor (opens in a new tab)">Source ↗</a>
+            </footer>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card" data-category="web" data-keywords="inventory electrical contracting crud tracking orders pos">
+            <header class="project-card-header">
+              <span class="project-tag">Web & Software</span>
+              <h3 class="project-title">Enterprise Inventory & Billing Terminal</h3>
+            </header>
+            <p class="project-desc">
+              A bespoke web terminal designed for managing wholesale electrical fixtures, tracking client work orders, and generating itemized quotes.
+            </p>
+            <ul class="tech-list" aria-label="Technologies used">
+              <li>Semantic HTML</li>
+              <li>State Management</li>
+              <li>CSS Variables</li>
+            </ul>
+            <footer class="project-card-footer">
+              <button class="btn btn-sm btn-outline modal-trigger" data-project="3" type="button">Details</button>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-text" aria-label="Source code for Enterprise Inventory & Billing Terminal (opens in a new tab)">Source ↗</a>
+            </footer>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card" data-category="web" data-keywords="portfolio vanilla js accessbility web performance lighthouse">
+            <header class="project-card-header">
+              <span class="project-tag">Web & Software</span>
+              <h3 class="project-title">Vanilla Core Engineering Portfolio</h3>
+            </header>
+            <p class="project-desc">
+              A dependency-free developer website engineered to 100% W3C accessibility compliance, sub-100ms load times, and modular architecture.
+            </p>
+            <ul class="tech-list" aria-label="Technologies used">
+              <li>HTML5</li>
+              <li>CSS Grid</li>
+              <li>ES6 Modules</li>
+            </ul>
+            <footer class="project-card-footer">
+              <button class="btn btn-sm btn-outline modal-trigger" data-project="4" type="button">Details</button>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-text" aria-label="Source code for Vanilla Core Engineering Portfolio (opens in a new tab)">Source ↗</a>
+            </footer>
+          </article>
+        </div>
+        
+        <p id="noResultsMsg" class="no-results hidden" role="status">No projects match your filter criteria.</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+      <div class="container contact-container">
+        <h2 class="section-heading">Get In Touch</h2>
+        <p class="section-sub">Have a project inquiry, technical query, or opportunity? Drop a note below.</p>
+
+        <div class="contact-layout">
+          <div class="contact-direct">
+            <h3>Direct Contact</h3>
+            <p>Prefer direct email? Click below to copy my primary contact address to your clipboard.</p>
+            <div class="clipboard-box">
+              <span id="emailAddress" class="email-display">106242@siswa.unimas.my</span>
+              <button id="copyEmailBtn" class="btn btn-sm btn-outline" type="button">Copy Address</button>
+            </div>
+          </div>
+
+          <!-- Contact Form with Front-end Validation -->
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="userName">Full Name <span class="required">*</span></label>
+              <input type="text" id="userName" name="userName" required autocomplete="name">
+              <span class="error-text" id="nameError" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="userEmail">Email Address <span class="required">*</span></label>
+              <input type="email" id="userEmail" name="userEmail" required autocomplete="email">
+              <span class="error-text" id="emailError" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="userMessage">Message <span class="required">*</span></label>
+              <textarea id="userMessage" name="userMessage" rows="5" required></textarea>
+              <span class="error-text" id="messageError" aria-live="polite"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Accessible Modal Dialog for Project Previews -->
+  <dialog id="projectModal" class="project-modal" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <button id="closeModalBtn" class="modal-close" aria-label="Close project modal" type="button">&times;</button>
+      <h3 id="modalTitle">Project Title</h3>
+      <div id="modalBody" class="modal-body-content"></div>
+    </div>
+  </dialog>
+
+  <!-- Toast Notification Feedback Container -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- Scroll To Top FAB -->
+  <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top of page" type="button">↑</button>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Sarrvish Nair. Engineered using pure HTML, CSS, and Vanilla JavaScript.</p>
+      <ul class="footer-links" aria-label="Social and code repository links">
+        <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in a new tab)">GitHub</a></li>
+        <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in a new tab)">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
